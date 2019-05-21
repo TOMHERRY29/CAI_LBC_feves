@@ -8,17 +8,63 @@
 <title>LaBonneFève.com</title>
 
 <style>
-
-.centre {
-position: absolute;
-left: 40%; 
-}
+    
 
 .titre {
-margin-left: 8%;
+margin: auto;
+margin-left: 44%;
 color: red; 
+padding: 1em;
 }
-  
+
+.formulaire {
+  margin: auto;
+  width: 350px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+
+form div + div {
+  margin-top: 1em;
+}
+
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: left;
+}
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+input, textarea {
+
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.cancel{ 
+  margin: auto;
+  margin-left: 41%;
+  width: 400px;
+  padding: 1em;
+  border-radius: 1em;   
+}
+
+
+
+
 </style> 
 
 
@@ -29,23 +75,34 @@ color: red;
 <div class="centre">
   <h1 class="titre">Ajouter</h1></h>
 
-  
-   <FORM ACTION="D:\CAI\CAI_LBC_feves-master\CAI_LBC_feves\index.html" style="display: inline;">
-        <INPUT TYPE="SUBMIT" VALUE="Cancel" class="btn btn-danger" >
-   </FORM>
-   <FORM ACTION="" style="display: inline;">
-        <INPUT TYPE="SUBMIT" VALUE="Validate" class="btn btn-success" >
+
+
+   <FORM ACTION="" method="post" class="formulaire">
+        <div>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="user_name">
+        </div>
+        <div>
+            <label for="mail">E-mail :</label>
+            <input type="email" id="mail" name="user_mail">
+        </div>
+        <div>
+            <label for="msg">Message :</label>
+            <textarea id="msg" name="user_message"></textarea>
+        </div>
+        <INPUT TYPE="SUBMIT" VALUE="Validate" class="btn btn-success" style="margin-top: 1em;"  >
    </FORM>
 
+    <FORM ACTION="D:\CAI\CAI_LBC_feves-master\CAI_LBC_feves\index.html" class="cancel" >
+        <INPUT TYPE="SUBMIT" VALUE="Cancel" class="btn btn-danger" >
+   </FORM>
+   
 </div>
 
 
 
 
-
-<script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-</script>
+<script></script>
 
 </body>
 
