@@ -9,10 +9,50 @@
 
 <style>
 
-  .centre {
-  position: absolute;
-  left: 50%; 
-  }
+.centre {
+position: absolute;
+left: 40%; 
+}
+
+.titre {
+margin-left: 12%;
+color: red; 
+}
+  
+.bloc {
+left : 10px;
+top: 200px;
+position: absolute;
+border: 2px solid black;
+width: 99%; 
+height: 30%;
+}
+
+
+.imageBloc
+{
+position : absolute;
+height: 100%;
+width: 30%;
+border: solid black 2px;
+}
+
+.image{
+position: absolute;
+height: 100%;
+width: 100%;
+}
+
+.commentaires
+{
+position : absolute;
+margin-left: 30%;
+height: 100%;
+width: 70%;
+border: solid black 2px;
+text-align: center;
+}  
+
 
 </style> 
 
@@ -22,15 +62,18 @@
     
 <body>
 <div class="centre">
-  <h1>Bienvenue</h1></h>
-  <button type="button" class="btn btn-primary">Accueil</button> <button type="button" class="btn btn-info">Info</button>
+  <h1 class="titre">Bienvenue</h1></h>
+  <button type="button" class="btn btn-primary">Accueil</button> <button type="button" class="btn btn-info">Informations</button>
   <button type="button" class="btn btn-info">Ajouter</button>
+</div>
+<div class="bloc">
+    <div class="imageBloc"><img src="D:\CAI\CAI_LBC_feves-master\CAI_LBC_feves\fevePokemon.jpg" class="image"> </div> <div class="commentaires">texte</div>
 </div>
 
 
 
 <script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
 
 </body>
