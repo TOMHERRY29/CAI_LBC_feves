@@ -4,8 +4,9 @@
 <meta charset="UTF-8">
 <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-<title>LaBonneFève.com</title>
+<!-- Favicon -->
+    <link rel="icon" type="image/png" href="D:\CAI\CAI_LBC_feves-master\CAI_LBC_feves\logo.png" />
+<title>LaBonneF&egrave;ve.com</title>
 
 <style>
     
@@ -40,7 +41,7 @@ input:focus, textarea:focus {
   border-color: #000;
 }
 
-input, textarea {
+input, textarea, select {
 
   font: 1em sans-serif;
   width: 300px;
@@ -79,8 +80,31 @@ textarea {
 
    <FORM ACTION="" method="post" class="formulaire">
         <div>
+            <label for="name">Image :</label>
+            <input type="file" id="image" name="image" accept="image/png, image/jpeg, image/pdf">
+        </div>
+        <div>
             <label for="name">Nom :</label>
             <input type="text" id="name" name="user_name">
+        </div>
+        <div>
+            <label for="firstname">Pr&eacute;nom :</label>
+            <input type="name" id="firstname" name="user_firstname">
+        </div>
+        <div>
+            <label for="lieu">Lieu :</label>
+            <input type="text" id="location" name="user_location">
+        </div>
+        <div>
+            <label for="price">Prix :</label>
+            <input type="number" id="price" name="price" >    
+        </div>
+        <div>
+            <label for="vendeur">Vendeur :</label>
+            <SELECT name="salesperson" size="1">
+            <OPTION>professionnel
+            <OPTION>particulier
+            </SELECT>
         </div>
         <div>
             <label for="mail">E-mail :</label>
