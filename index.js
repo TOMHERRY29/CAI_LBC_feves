@@ -18,6 +18,7 @@ app.use(bodyParser.json());
 app.use(express.static('CAI_LBC_feves'));
 
 var feveSchema = mongoose.Schema({
+    image: Blob,
     nom: String, 
     prenom: String, 
     lieu: String, 
@@ -44,7 +45,9 @@ myRouter.route('/feves')
 })
 .post(function(req,res){
     var feve = new Feves();
-    feve.nom = req.body.a;
+    console.log(req.body);
+    feve.image = req.body.image;
+    feve.nom = req.body.nom;
     feve.prenom = req.body.prenom;
     feve.lieu = req.body.lieu;
     feve.prix = req.body.prix;
@@ -56,7 +59,7 @@ myRouter.route('/feves')
         res.send(err);
         }
         res.json({message : 'Bravo, l article est maintenant stockée en base de données'});
-        window.location.replace("index.html");
+        //window.location.replace("index.html");
     }); 
 }); 
  
@@ -73,6 +76,7 @@ myRouter.route('/feves/:feves_id')
                 if (err){
                     res.send(err);
                 }
+                feve.image = req.body.image;
                 feve.nom = req.body.nom;
                 feve.prenom = req.body.prenom;
                 feve.lieu = req.body.lieu;
