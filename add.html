@@ -39,7 +39,7 @@ form div + div {
 
 label {
   display: inline-block;
-  width: 90px;
+  width: 200px;
   text-align: left;
 }
 input:focus, textarea:focus {
@@ -62,7 +62,7 @@ textarea {
 
 .cancel{ 
 
-  margin-left: 41%;
+  margin-left: 38%;
   width: 400px;
   padding: 1em;
   border-radius: 1em;   
@@ -85,8 +85,9 @@ textarea {
 
    <FORM ACTION="http://localhost:3000/feves" method="post" class="formulaire">
         <div>
-            <label for="name">Image :</label>
-            <input type="file" id="image" name="image" accept="image/png, image/jpeg, image/pdf">
+            <label for="name">Image : (URL de l'image)</label>
+            <!--<input type="file" id="image" name="image" accept="image/png, image/jpeg, image/pdf">-->
+            <input type="text" id="image" name="image">
         </div>
         <div>
             <label for="name">Nom :</label>

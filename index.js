@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 app.use(express.static('CAI_LBC_feves'));
 
 var feveSchema = mongoose.Schema({
-    image: Blob,
+    image: String,
     nom: String, 
     prenom: String, 
     lieu: String, 
